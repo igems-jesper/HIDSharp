@@ -1558,7 +1558,7 @@ namespace HidSharp.Platform.Windows
 
         public static bool TryOpenToGetInfo(string path, Func<IntPtr, bool> action)
         {
-            var handle = NativeMethods.CreateFileFromDevice(path, NativeMethods.EFileAccess.None, NativeMethods.EFileShare.Read | NativeMethods.EFileShare.Write);
+            var handle = NativeMethods.CreateFileFromDevice(path, NativeMethods.EFileAccess.Read | NativeMethods.EFileAccess.Write, NativeMethods.EFileShare.Read | NativeMethods.EFileShare.Write);
             if (handle == (IntPtr)(-1)) { return false; }
 
             try

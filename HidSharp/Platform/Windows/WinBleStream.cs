@@ -52,7 +52,7 @@ namespace HidSharp.Platform.Windows
 
         internal unsafe void Init(string path)
         {
-            IntPtr handle = NativeMethods.CreateFileFromDevice(path, NativeMethods.EFileAccess.Read | NativeMethods.EFileAccess.Write, 0);
+            IntPtr handle = NativeMethods.CreateFileFromDevice(path, NativeMethods.EFileAccess.Read | NativeMethods.EFileAccess.Write, NativeMethods.EFileShare.Read | NativeMethods.EFileShare.Write);
             if (handle == (IntPtr)(-1))
             {
                 throw DeviceException.CreateIOException(Device, "Unable to open BLE service (" + path + ").");

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VdVzNs7+x3R2zAjQvfCpMINkeq99oPRT35ui2gvllj+ph9VT9hh2rcFrj3E6DQ7aLzXdcWku69w6yXJQH9G2vA==",
+  "success": true,
+  "projectFilePath": "C:\\prj\\HIDSharp\\HidSharp\\HidSharp.NETStandard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jesper\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
